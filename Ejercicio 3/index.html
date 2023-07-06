@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      font-family: Arial, sans-serif;
+      border: #707070 solid 2px;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #707070;
+    }
+    tr {
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #bffcac;
+    }
+    tr:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <body>
+    <!-- crear tabla con  nombre, apellidos, fecha de nacimiento y telefono -->
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Fecha de nacimiento</th>
+        <th>Telefono</th>
+      </tr>
+      <tr>
+        <td>Pepe</td>
+        <td>Perez</td>
+        <td>01/01/1988</td>
+        <td>666666666</td>
+      </tr>
+      <tr>
+        <td>Antonio</td>
+        <td>Medina</td>
+        <td>05/05/2000</td>
+        <td>432212344</td>
+      </tr>
+      <tr>
+        <td>Manolo</td>
+        <td>Torres</td>
+        <td>07/01/3001</td>
+        <td>554f667887</td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>Armando</td>
+        <td>01/01/2000</td>
+        <td>332112334</td>
+      </tr>
+      <tr>
+        <td>Pepe</td>
+        <td>Perez</td>
+        <td>10/10/1900</td>
+        <td>212546765</td>
+      </tr>
+    </table>
+  </body>
+</html>
