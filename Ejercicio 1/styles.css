@@ -1,0 +1,69 @@
+.ejercicio1 {
+  font-weight: 900;
+}
+.normal {
+  font-weight: normal;
+}
+.italic {
+  font-style: italic;
+}
+.enfatizado {
+  font-style: italic;
+  font-weight: 900;
+}
+.subrayado {
+  text-decoration: underline;
+}
+.tachado {
+  text-decoration: line-through;
+}
+.secciones {
+  font-size: 1em;
+
+  background-color: antiquewhite;
+  border: solid 1px black;
+  box-shadow: 2px 2px 2px black;
+}
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aqua;
+  font-size: 1rem;
+}
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+.tresveces {
+  font-size: 3rem;
+}
+.amarillo {
+  color: yellow;
+}
+.violeta {
+  color: violet;
+}
+.bronce {
+  color: #cd7f32;
+}
+.coral {
+  color: coral;
+}
+.gruesa {
+  width: 70vw;
+  height: 10px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+.delgada {
+  width: 60vw;
+  height: 2px;
+  background-color: grey;
+  margin-left: 10vw;
+}
+.doble {
+  width: 30vw;
+  height: 20px;
+  background-color: blue;
+  margin-top: 10px;
+  margin-left: 40vw;
+}
