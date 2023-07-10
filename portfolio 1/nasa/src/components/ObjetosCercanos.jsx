@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import "./ObjetosCercanos.css";
 
 export function ObjetosCercanos() {
   const [objetos, setObjetos] = useState([]);
@@ -17,10 +18,13 @@ export function ObjetosCercanos() {
   }, []); // Se invoca getObjetos cuando el componente se monta
 
   return (
-    <div>
-      {/* Aquí renderizamos algo basado en los datos que hemos guardado en 'objetos' */}
+    <div className="container">
       {objetos.map((objeto) => (
-        <div key={objeto.id}>
+        <div
+          className={`objeto ${
+            objeto.is_potentially_hazardous_asteroid ? "peligro" : ""
+          }`}
+          key={objeto.id}>
           <h2>{objeto.name}</h2>
           <p>
             Diámetro estimado (metros):{" "}

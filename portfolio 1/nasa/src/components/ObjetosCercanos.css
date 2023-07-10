@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.objeto {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.objeto:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.objeto h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.objeto p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.objeto p:last-child {
+  margin-bottom: 0;
+}
+.peligro {
+  background-color: #ffcccc;
+  border: 1px solid #ff4d4d;
+}
