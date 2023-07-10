@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #f5f5f5;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.boton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #45a049;
+}
+
+.boton:active {
+  background-color: #82d084;
+}
+
+.boton a {
+  color: white;
+  text-decoration: none;
+}
+
+.boton a:hover {
+  text-decoration: underline;
+}
