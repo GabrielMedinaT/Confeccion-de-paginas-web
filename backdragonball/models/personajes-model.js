@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const personajeSchema = new Schema({
+  cita: String,
   nombre: String,
   nombreJapon: String,
   otrosNombres: [{ type: String }],
