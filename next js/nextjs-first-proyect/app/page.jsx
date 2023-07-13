@@ -10,17 +10,16 @@ async function IndexPage() {
   const user = await fetchUser();
 
   return (
-    <div>
-      <h1>Index Page</h1>
-      <ul>
+    <div className="container">
+      <h1 className="title">Index Page</h1>
+      <ul className="user-list">
         {user.map((user) => (
-          <li key={user.id}>
-            <div>
-              <h4>{user.first_name}</h4>
-              <h5>{user.id}</h5>
-              <p>{user.email}</p>
+          <li key={user.id} className="user-item">
+            <div className="user-info">
+              <h5 className="user-name">{user.first_name}</h5>
+              <p className="user-email">{user.email}</p>
+              <img src={user.avatar} alt="" className="user-avatar" />
             </div>
-            <img src={user.avatar} alt="" />
           </li>
         ))}
       </ul>

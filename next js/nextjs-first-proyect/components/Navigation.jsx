@@ -16,6 +16,9 @@ function Navigation() {
         <li>
           <Link href="/users">Users</Link>
         </li>
+        <li>
+          <Link href="/clase">Clases</Link>
+        </li>
       </ul>
     </div>
   );
