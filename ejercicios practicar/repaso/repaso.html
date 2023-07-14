@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      width: 50vw;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 3 / 2;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div2 {
+      grid-area: 3 / 1 / 4 / 2;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div3 {
+      grid-area: 4 / 1 / 5 / 2;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div4 {
+      grid-area: 5 / 1 / 6 / 2;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div5 {
+      grid-area: 3 / 2 / 4 / 3;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div6 {
+      grid-area: 4 / 2 / 5 / 3;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div7 {
+      grid-area: 5 / 2 / 6 / 3;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div8 {
+      grid-area: 3 / 3 / 4 / 4;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div9 {
+      grid-area: 4 / 3 / 5 / 4;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div10 {
+      grid-area: 5 / 3 / 6 / 4;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div11 {
+      grid-area: 3 / 4 / 4 / 5;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div12 {
+      grid-area: 4 / 4 / 5 / 5;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div13 {
+      grid-area: 5 / 4 / 6 / 5;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div14 {
+      grid-area: 2 / 2 / 3 / 3;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div15 {
+      grid-area: 2 / 3 / 3 / 4;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div16 {
+      grid-area: 2 / 4 / 3 / 5;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .div17 {
+      grid-area: 1 / 2 / 2 / 5;
+      border: solid 1px black;
+      text-align: center;
+    }
+    .parent2 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      width: 50vw;
+      height: 35vh;
+      color: aqua;
+      text-align: center;
+      font-weight: 900;
+      font-size: xx-large;
+    }
+
+    .div122 {
+      grid-area: 1 / 1 / 2 / 2;
+      background-color: red;
+    }
+    .div22 {
+      grid-area: 1 / 2 / 2 / 3;
+      background-color: blue;
+    }
+    .div32 {
+      grid-area: 1 / 3 / 2 / 5;
+      background-color: green;
+    }
+    .div42 {
+      grid-area: 2 / 1 / 3 / 2;
+      background-color: yellow;
+    }
+    .div52 {
+      grid-area: 2 / 2 / 4 / 4;
+      background-color: orange;
+    }
+    .div62 {
+      grid-area: 2 / 4 / 3 / 5;
+      background-color: purple;
+    }
+    .div72 {
+      grid-area: 3 / 1 / 4 / 2;
+      background-color: pink;
+    }
+    .div82 {
+      grid-area: 3 / 4 / 4 / 5;
+      background-color: brown;
+    }
+    .div92 {
+      grid-area: 4 / 1 / 5 / 3;
+      background-color: black;
+    }
+    .div102 {
+      grid-area: 4 / 3 / 5 / 4;
+      background-color: white;
+    }
+    .div112 {
+      grid-area: 4 / 4 / 5 / 5;
+      background-color: gray;
+    }
+    .parent3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      border: solid 3px black;
+      text-align: center;
+    }
+
+    .div31 {
+      grid-area: 1 / 1 / 2 / 4;
+      border: solid 3px black;
+    }
+    .div323 {
+      grid-area: 2 / 1 / 3 / 2;
+      border: solid 3px black;
+    }
+    .div33 {
+      grid-area: 3 / 1 / 4 / 2;
+      border: solid 3px black;
+    }
+    .div34 {
+      grid-area: 4 / 1 / 5 / 2;
+      border: solid 3px black;
+    }
+    .div35 {
+      grid-area: 5 / 1 / 6 / 2;
+      border: solid 3px black;
+    }
+    .div36 {
+      grid-area: 6 / 1 / 7 / 2;
+      border: solid 3px black;
+    }
+    .div37 {
+      grid-area: 2 / 2 / 3 / 3;
+      border: solid 3px black;
+    }
+    .div38 {
+      grid-area: 3 / 2 / 4 / 3;
+      border: solid 3px black;
+    }
+    .div39 {
+      grid-area: 4 / 2 / 5 / 3;
+      border: solid 3px black;
+    }
+    .div310 {
+      grid-area: 5 / 2 / 6 / 3;
+      border: solid 3px black;
+    }
+    .div311 {
+      grid-area: 6 / 2 / 7 / 3;
+      border: solid 3px black;
+    }
+  </style>
+  <body>
+    <h1>Potencias</h1>
+    <h2>1<sup>2</sup>=1</h2>
+    <h2>2<sup>3</sup>=8</h2>
+    <h2>3<sup>4</sup>=81</h2>
+    <h2>4<sup>2</sup>=16</h2>
+    <br />
+    <h1>Química</h1>
+    <h2>XO2<sup>2-</sup></h2>
+
+    <h2>H<sub>2</sub>SO<sub>3</sub></h2>
+
+    <h1>Beatle lead singer</h1>
+    <ol>
+      <li>Paul McCartney</li>
+      <ol>
+        <li>Lady Madonna</li>
+        <li>Lovely Rita</li>
+        <li>Eleanor Rigby</li>
+        <li>Can't Buy Me Love</li>
+        <ul>
+          <li>Jhon and Paul together</li>
+        </ul>
+        <li>When i'm Sixty-Four</li>
+      </ol>
+      <li>Jhon Lennon</li>
+      <ol>
+        <li>Strawberry Fields Forever</li>
+        <li>Lucy in the Sky with Diamonds</li>
+        <li>Help!</li>
+        <li>Imagine</li>
+        <li>Can't Buy Me Love</li>
+        <ul>
+          <li>Jhon and Paul together</li>
+        </ul>
+      </ol>
+      <li>Ringo Starr</li>
+      <ol>
+        <li>Yellow Submarine</li>
+        <li>Octopus's Garden</li>
+        <li>With a Little Help from My Friends</li>
+      </ol>
+    </ol>
+
+    <div class="parent">
+      <div class="div1">ALUMNO</div>
+      <div class="div2">Alonso Castro</div>
+      <div class="div3">Cristobal Gonzalez</div>
+      <div class="div4">Paula Rivera</div>
+      <div class="div5">9.7</div>
+      <div class="div6">8.9</div>
+      <div class="div7">8.4</div>
+      <div class="div8">9.6</div>
+      <div class="div9">9.2</div>
+      <div class="div10">9.0</div>
+      <div class="div11">9.65</div>
+      <div class="div12">9.05</div>
+      <div class="div13">8.7</div>
+      <div class="div14">Primer Año</div>
+      <div class="div15">Segundo año</div>
+      <div class="div16">Promedio</div>
+      <div class="div17">Notas</div>
+    </div>
+    <br /><br /><br /><br />
+    <div class="parent2">
+      <div class="div122">A</div>
+      <div class="div22">B</div>
+      <div class="div32">C</div>
+      <div class="div42">D</div>
+      <div class="div52">E</div>
+      <div class="div62">F</div>
+      <div class="div72">G</div>
+      <div class="div82">H</div>
+      <div class="div92">I</div>
+      <div class="div102">J</div>
+      <div class="div112">K</div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <div class="parent3">
+      <div class="div31">Resultados de la búsqueda</div>
+      <div class="div323">Imagen</div>
+      <div class="div33"><img src="./captura1.JPG" alt="" /></div>
+      <div class="div34"><img src="./captura2.JPG" alt="" /></div>
+      <div class="div35"><img src="./captura3.JPG" alt="" /></div>
+      <div class="div36"><img src="./captura4.JPG" alt="" /></div>
+      <div class="div37">
+        <h2>Portatil I9 13700K 64Gb RAM</h2>
+        <br />
+        <h2>Comprar <del>2999</del> 2.599</h2>
+      </div>
+      <div class="div38"></div>
+      <div class="div39"></div>
+      <div class="div310"></div>
+      <div class="div311"></div>
+    </div>
+  </body>
+</html>
