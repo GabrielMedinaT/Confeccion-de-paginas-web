@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- colocar icono favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Gabriel</title>
+  </head>
+
+  <style>
+    video {
+      width: 100%;
+      height: 50vh;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+    }
+    h1 {
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 50vh;
+    }
+    marquee {
+      transition: all 2s ease-in-out;
+    }
+    marquee:hover {
+      background-color: pink;
+      font-size: x-large;
+      cursor: pointer;
+    }
+    p {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Video en local</h1>
+    <p>
+      El video tiene los siguientes atributos <br />
+      autoplay: se reproduce automáticamente <br />
+      loop: se reproduce en bucle <br />
+      controls: muestra los controles del video <br />
+      <img src="./Captura de pantalla 2023-07-12 180915.png" alt="" />
+    </p>
+    <video autoplay loop controls src="./166808 (540p).mp4"></video>
+    <p>
+      el marquee tiene los siguientes atributos <br />
+      direction: dirección de la marquesina <br />
+      behavior: comportamiento de la marquesina <br />
+      bgcolor: color de fondo de la marquesina <br />
+      width: ancho de la marquesina <br />
+      height: alto de la marquesina <br />
+      scrollamount: velocidad de desplazamiento <br />
+      scrolldelay: tiempo de espera entre cada desplazamiento <br />
+      loop: número de veces que se repite <br />
+      onmouseover: evento que se ejecuta cuando el ratón pasa por encima <br />
+      onmouseout: evento que se ejecuta cuando el ratón sale de la marquesina
+      <br />
+      <img src="./Captura de pantalla 2023-07-12 180725.png" alt="" />
+    </p>
+    <marquee
+      direction="right"
+      behavior="alternate"
+      bgcolor="red"
+      width="100%"
+      height="100px"
+      scrollamount="10"
+      scrolldelay="100"
+      loop="10"
+      onmouseover="this.stop()"
+      onmouseout="this.start()">
+      <h1>Esto es una marquesina</h1>
+    </marquee>
+    <h1>Video de URL</h1>
+    <p>
+      El video en iframe tiene los siguientes atributos <br />
+      title: titulo del video <br />
+      src: url del video <br />
+      width: ancho del video <br />
+      height: alto del video <br />
+      frameborder: borde del video <br />
+      allowfullscreen: permite ver el video en pantalla completa <br />
+      <img src="./Captura de pantalla 2023-07-12 181031.png" alt="" />
+    </p>
+    <iframe
+      title="vimeo-player"
+      src="https://player.vimeo.com/video/586578142?h=6f9de83b98"
+      width="640"
+      height="360"
+      frameborder="15"
+      allowfullscreen></iframe>
+  </body>
+</html>

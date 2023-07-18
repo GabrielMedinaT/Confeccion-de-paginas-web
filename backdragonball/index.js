@@ -3,9 +3,16 @@ const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const personajesRouter = require("./router/personajes");
+const planetas = require("./router/planetas");
 const port = 5000;
 
 dotenv.config();
+app.use(cors());
+app.use(express.json());
+
+app.use("/personajes", personajesRouter);
+app.use("/planetas", planetas);
 
 mongoose
   .connect(process.env.MONGO_DB_URI)
