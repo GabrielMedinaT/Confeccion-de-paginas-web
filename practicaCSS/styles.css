@@ -1,0 +1,50 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  color: blue;
+  background-color: #cfc;
+  font-family: Georgia, Cambria, serif;
+  font-size: 16px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Calibri, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+h2 {
+  color: #a00;
+  font-family: Verdana, Calibri, sans-serif;
+  font-size: 24px;
+}
+
+li span {
+  color: #060;
+}
+
+.negrita {
+  font-size: 20px;
+  font-weight: bold;
+}
+.blancoynegro {
+  color: white;
+  background-color: black;
+  font-style: italic;
+}
+
+p,
+ul {
+  margin: 20px;
+}
