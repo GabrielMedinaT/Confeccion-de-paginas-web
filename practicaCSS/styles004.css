@@ -1,0 +1,55 @@
+ul li {
+  background-color: purple;
+}
+
+li {
+  background-color: mediumturquoise;
+}
+
+.colorines li {
+  color: black;
+}
+
+.colorines li:nth-child(1) {
+  background-color: red;
+}
+
+.colorines li:nth-child(2) {
+  background-color: green;
+}
+
+.colorines li:nth-child(3) {
+  background-color: blue;
+}
+
+.colorines li:nth-child(4) {
+  background-color: #f0fc03;
+}
+
+.colorines li:nth-child(5) {
+  background-color: #fc7303;
+}
+
+.colorines li:nth-child(6) {
+  background-color: #9d03fc;
+}
+
+h1,
+h2,
+h3 {
+  background-color: navy;
+  color: #ffffff;
+  text-align: center;
+}
+
+.nones {
+  background-color: olive;
+}
+
+.pares {
+  background-color: tomato;
+}
+
+.perro {
+  background-color: goldenrod !important;
+}
