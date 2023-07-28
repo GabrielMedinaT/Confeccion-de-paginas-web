@@ -1,0 +1,14 @@
+.azul {
+  background-color: rgb(114, 114, 251);
+}
+tr:nth-child(2n) {
+  background-color: rgb(235, 251, 114);
+}
+tr:hover {
+  background-color: yellow;
+}
+table {
+  border-collapse: collapse;
+  font-size: 2em;
+}
+

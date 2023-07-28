@@ -1,0 +1,54 @@
+.cabeza {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1e5f1;
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 90vw;
+  margin: 0 auto;
+}
+.caritas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+.opcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 10vh;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: aquamarine;
+  padding: 0px 30px 0px 30px;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+}
+h3 {
+  margin: 10px 0px 10px 0px;
+}
+.carteles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+.imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}

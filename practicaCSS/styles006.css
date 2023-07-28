@@ -12,17 +12,18 @@ body {
   margin: 0 auto;
 }
 header {
-  background-color: wheat;
   height: 10vh;
   width: 100%;
+  border-bottom: solid 1px black;
 }
 .central {
-  background-color: rgb(227, 49, 49);
+  display: flex;
+  flex-direction: row;
+
   height: 80vh;
   width: 100%;
 }
 footer {
-  background-color: wheat;
   height: 10vh;
   width: 100%;
 }
@@ -30,18 +31,47 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(49, 227, 49);
   height: 100%;
   width: 20vw;
   padding: 20px;
 }
 .izq1 {
-  background-color: rgb(49, 182, 227);
   height: 48%;
   width: 15vw;
+  border: 1px solid black;
 }
 .izq2 {
-  background-color: rgb(49, 182, 227);
   height: 48%;
   width: 15vw;
+  border: 1px solid black;
+}
+.cent {
+  height: 100%;
+  width: 50vw;
+}
+.der {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 20vw;
+  padding: 20px;
+  border: solid 1px black;
+  margin-top: 10px;
+}
+.cent1 {
+  display: flex;
+  flex-direction: row;
+}
+.cent2 {
+  margin-top: -1px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-top: solid 1px black;
 }

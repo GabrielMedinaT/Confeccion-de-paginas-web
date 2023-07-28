@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 4.6fr 0.1fr 1fr 1fr;
+  gap: 10px 10px;
+  height: 100vh;
+  grid-template-areas:
+    "header header header header header header header"
+    "NavBar NavBar NavBar NavBar NavBar NavBar NavBar"
+    "Aside Aside ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal"
+    "Aside Aside ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal"
+    "Aside Aside ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal"
+    "Aside Aside ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal"
+    "Aside Aside ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal ContenidoPrincipal"
+    "footer footer footer footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: green;
+}
+
+.NavBar {
+  grid-area: NavBar;
+  background-color: yellow;
+}
+
+.Aside {
+  grid-area: Aside;
+  background-color: pink;
+}
+
+.ContenidoPrincipal {
+  grid-area: ContenidoPrincipal;
+  background-color: blue;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: goldenrod;
+}
