@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [contador, setContador] = useState(0);
+  const [contador, setContador] = useState(1);
 
   const aleatorio = () => {
-    setContador(Math.floor(Math.random() * 100000));
+    setContador(contador + 1);
   };
 
   return (
