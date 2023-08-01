@@ -1,0 +1,27 @@
+main {
+  border: 2px solid rgb(0, 0, 0);
+  width: 70%;
+  margin: 0 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  border: 2px solid red;
+  width: 92%;
+  padding: 0 2% 2%;
+  margin: 2%;
+}
+section {
+  border: 2px solid greenyellow;
+  width: 92%;
+  padding: 0 2% 2%;
+  margin: 2%;
+  height: 40vh;
+}
+footer {
+  border: 2px solid rgb(243, 236, 139);
+  width: 92%;
+  padding: 0 2% 2%;
+  margin: 2%;
+}

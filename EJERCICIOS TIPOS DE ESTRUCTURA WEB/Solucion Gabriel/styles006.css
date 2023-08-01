@@ -1,0 +1,93 @@
+header {
+  border: 2px solid red;
+  width: 92%;
+  padding: 0 2% 2%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header > h1 {
+  font-size: 2em;
+  font-weight: bold;
+  align-self: flex-start;
+}
+.sub {
+  width: 90%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.linea1 {
+  width: 90%;
+  height: 60%;
+  border: 1px solid black;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.linea1 > div {
+  width: 30%;
+  height: 30%;
+  border: 1px solid black;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  width: 90%;
+  height: 90%;
+  border: 1px solid black;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+main {
+  border: 2px solid rgb(0, 0, 0);
+  width: 70%;
+  margin: 0 15%;
+  text-align: center;
+}
+main > h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  margin: 3%;
+}
+.principal {
+  border: 2px solid rgb(0, 0, 255);
+  width: 65%;
+  padding: 0 2% 2%;
+  margin: 2% 2% 2% 25%;
+  height: 400px;
+}
+footer {
+  border: 2px solid rgb(0, 0, 255);
+  width: 92%;
+  padding: 0 2% 2%;
+  margin: 2%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.subfooter {
+  border: 2px solid rgb(0, 0, 255);
+  width: 25%;
+  padding: 0 2% 2%;
+  margin: 2%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

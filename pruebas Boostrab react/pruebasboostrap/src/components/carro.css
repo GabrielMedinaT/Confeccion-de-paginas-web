@@ -1,0 +1,8 @@
+.carroImagenes {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  transition: all 0.3s ease-in-out;
+}

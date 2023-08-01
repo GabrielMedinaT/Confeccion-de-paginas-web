@@ -1,0 +1,140 @@
+header {
+  float: left;
+  border: 2px solid rgb(255, 0, 0);
+  height: 100px;
+  width: 92%;
+  padding: 0 2% 2%;
+  margin: 2%;
+}
+.uno {
+  float: right;
+  border: 2px solid rgb(0, 255, 0);
+  width: 50%;
+  padding: 0 2% 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: 300px;
+}
+.uno1 {
+  float: left;
+  border: 2px solid rgb(0, 255, 0);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 2%;
+  height: 150px;
+}
+.uno2 {
+  float: right;
+  border: 2px solid rgb(0, 255, 0);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 20%;
+  height: 150px;
+}
+.dos {
+  float: right;
+  border: 2px solid rgb(0, 0, 255);
+  width: 50%;
+  padding: 0 2% 2%;
+  margin-right: 2%;
+  height: 300px;
+  margin-bottom: 2%;
+}
+
+.dos1 {
+  float: left;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 2%;
+  height: 150px;
+}
+.dos2 {
+  float: right;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 2%;
+  height: 150px;
+}
+
+.tres {
+  float: right;
+  border: 2px solid rgb(0, 0, 255);
+  width: 50%;
+  padding: 0 2% 2%;
+  margin-right: 2%;
+  height: 300px;
+  margin-bottom: 2%;
+}
+.cuatro {
+  float: right;
+  border: 2px solid rgb(0, 0, 255);
+  width: 50%;
+  padding: 0 2% 2%;
+  margin-right: 2%;
+  height: 300px;
+  margin-bottom: 2%;
+}
+.cinco {
+  float: left;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-left: 2%;
+  height: 150px;
+  margin-bottom: 2%;
+}
+.seis {
+  float: left;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-left: 2%;
+  height: 150px;
+  margin-bottom: 2%;
+}
+.siete {
+  float: left;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-right: 25%;
+  margin-left: 2%;
+  height: 150px;
+  margin-bottom: 2%;
+}
+.tres1 {
+  float: left;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 2%;
+  height: 150px;
+}
+.tres2 {
+  float: left;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 2%;
+  margin-left: 2%;
+  height: 150px;
+}
+.cuatro1 {
+  float: right;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 2%;
+  height: 150px;
+}
+.cuatro2 {
+  float: right;
+  border: 2px solid rgb(0, 0, 255);
+  width: 150px;
+  padding: 0 2% 2%;
+  margin-top: 2%;
+  margin-right: 2%;
+  height: 150px;
+}
