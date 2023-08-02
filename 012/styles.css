@@ -1,0 +1,113 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #797979;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+  margin: 10%;
+}
+header {
+  height: 100px;
+}
+section {
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+}
+article {
+  width: 60%;
+
+  flex: 1;
+}
+article p {
+  margin: 0;
+  width: 90%;
+}
+menu {
+  width: 30%;
+
+  display: flex;
+  margin-top: -100px;
+}
+
+h3 b {
+  color: black;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: rgb(255, 68, 0);
+  visibility: hidden;
+}
+li:hover::before {
+  visibility: visible;
+}
+ul h2 {
+  margin: 10px;
+  padding: 0;
+  color: rgb(255, 68, 0);
+}
+li::before {
+  left: -1px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+.galeria {
+  width: 70vw;
+
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.principales {
+  margin-top: 20px;
+  height: 100%;
+  width: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.principales img {
+  width: 25%;
+  margin: 10px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.principales img:hover {
+  transform: scale(1.3);
+}
