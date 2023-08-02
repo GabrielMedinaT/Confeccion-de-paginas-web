@@ -7,13 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.5.0/dist/htmx.js"></script>
   </head>
   <body>
-    <div hx-target="this" hx-swap="outerHTML">
-      <div><label>First Name</label>: Joe</div>
-      <div><label>Last Name</label>: Blow</div>
-      <div><label>Email</label>: joe@blow.com</div>
-      <button hx-get="./contac1.html" class="btn btn-primary">
-        Click To Edit
-      </button>
+    <div hx-post="/mouse_entered" hx-trigger="mouseenter">
+      [Here Mouse, Mouse!]
     </div>
   </body>
 </html>
