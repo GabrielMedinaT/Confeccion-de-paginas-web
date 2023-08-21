@@ -1,0 +1,155 @@
+/*
+font-family: 'Fascinate', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
+/* ASPECTOS GENERALES */
+
+body{   
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fascinate', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CAJITAS FONDO CLARO */
+
+.cajitas-fondo-claro{
+    background-color: #efefef;
+    padding: 0 1%;
+}
+
+.cajitas-fondo-claro h2{
+    margin: 0;
+    padding: 15px 2%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.cajitas-fondo-claro .fila{
+    display: flex;
+}
+
+.cajitas-fondo-claro .fila .cajita{
+    margin: 20px 1%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 3px 0px #777777; 
+    box-shadow: 0px 0px 3px 0px #777777;
+    /* filtros de imagen */
+    filter: grayscale(60%);
+    /* Transición de los efectos hover */
+    transition: 0.6s;
+}
+
+.cajitas-fondo-claro .fila .cajita:hover{
+    /* filtros de imagen */
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+
+.cajitas-fondo-claro .fila .cajita img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cajitas-fondo-claro .fila .cajita .padre{
+    position: relative;
+}
+
+.cajitas-fondo-claro .fila .cajita .padre .hijo{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.cajitas-fondo-claro .fila .cajita p{
+    margin: 10px 5%;
+}
+
+
+
+/* CAJITAS FONDO OSCURO */
+
+.cajitas-fondo-oscuro{
+    background-color: #000000;
+    padding: 0 1%;
+}
+
+.cajitas-fondo-oscuro h2{
+    color: #ffffff;
+    margin: 0;
+    padding: 15px 2%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.cajitas-fondo-oscuro .fila{
+    display: flex;
+}
+
+.cajitas-fondo-oscuro .fila .cajita{
+    margin: 20px 1%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 3px 0px #777777; 
+    box-shadow: 0px 0px 3px 0px #777777;
+    /* filtros de imagen */
+    filter: grayscale(60%);
+    /* Transición de los efectos hover */
+    transition: 0.6s;
+}
+
+.cajitas-fondo-oscuro .fila .cajita:hover{
+    /* filtros de imagen */
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+
+.cajitas-fondo-oscuro .fila .cajita img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cajitas-fondo-oscuro .fila .cajita .padre{
+    position: relative;
+}
+
+.cajitas-fondo-oscuro .fila .cajita .padre .hijo{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.cajitas-fondo-oscuro .fila .cajita p{
+    margin: 10px 5%;
+}

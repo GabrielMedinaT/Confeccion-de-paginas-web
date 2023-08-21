@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Visitando el Mundo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/fav-icon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Cargo las media queries -->
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <script type="text/javascript">
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Agrega un controlador de eventos para los enlaces de navegación
+        $('a[href^="#"]').on("click", function (event) {
+          event.preventDefault();
+
+          // Obtiene el ID del objetivo del enlace
+          var target = this.hash;
+
+          // Anima el desplazamiento al objetivo con efecto de deslizamiento
+          $("html, body").animate(
+            {
+              scrollTop: $(target).offset().top,
+            },
+            800
+          ); // Cambia este valor para ajustar la velocidad de la animación
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header id="home">
+      <img src="./Sources/Images/willyFog.png" alt="" width="90px" />
+    </header>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a id="link-activo" href="#home"><i class="fas fa-home"></i></a>
+        </li>
+        <div class="aumentar">
+          <li><a href="#masVisitadas">Más visitadas</a></li>
+        </div>
+        <div class="aumentar">
+          <li><a href="#mejorValoradas">Mejor valoradas</a></li>
+        </div>
+        <div class="aumentar">
+          <li><a href="#parallax">Parallax</a></li>
+        </div>
+        <div class="aumentar">
+          <li><a href="#destinos-turisticos">Destinos turísticos</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="letras">
+          <h2>
+            Viaje con <span class="texto-verde">nosotros</span> para conocer
+            mundo
+          </h2>
+          <p>
+            Descubre un mundo de emocionantes aventuras y experiencias
+            inolvidables alrededor del globo. Sumérgete en la belleza de
+            destinos exóticos, explora culturas fascinantes y crea recuerdos
+            inigualables en cada rincón del planeta. Deja que tus sueños de
+            viajar se conviertan en realidad mientras te adentras en nuevas
+            tierras y creas historias que durarán toda la vida.
+            <span class="textoAzul">¡Tu próxima gran aventura te espera!</span>
+          </p>
+        </div>
+        <a href="">Acción a realizar</a>
+      </section>
+      <h1 id="masVisitadas"></h1>
+      <section class="containerFondoClaro">
+        <div class="titulo">
+          <h2 class="p1">Localizaciones más visitadas</h2>
+        </div>
+        <div class="fila">
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/01.jpg" alt="" />
+                <h3 class="hijo">Paris</h3>
+              </div>
+              <p>
+                París, la capital de Francia, es una ciudad icónica y
+                cautivadora que rebosa historia, cultura y elegancia. Conocida
+                por su arquitectura impresionante, monumentos emblemáticos como
+                la Torre Eiffel y el Louvre, así como su atmósfera romántica a
+                lo largo del río Sena, París es un destino mundialmente famoso
+                que combina el encanto clásico con la vitalidad contemporánea.
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 2 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/02.jpg" alt="" />
+                <h3 class="hijo">Londres</h3>
+              </div>
+              <p>
+                Londres, la capital del Reino Unido, te invita a sumergirte en
+                un universo de contrastes y encanto. Esta metrópolis fascinante
+                es un crisol de historia y modernidad. Desde la majestuosidad
+                del Big Ben y la elegancia de Buckingham Palace, hasta la
+                energía de Camden Market y los rincones verdes de Hyde Park,
+                Londres es un mosaico de experiencias inolvidables que capturan
+                la esencia de una ciudad global vibrante.
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 3 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/03.jpg" alt="" />
+                <h3 class="hijo">Roma</h3>
+              </div>
+              <p>
+                Roma, la capital de Italia, es un tesoro de legado histórico y
+                pasión cultural. Reconocida por su arquitectura imponente,
+                íconos como el Coliseo y el Vaticano, así como su encanto
+                romántico a orillas del río Tíber, Roma es una joya universal
+                que fusiona la grandeza clásica con la vitalidad moderna.
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 4 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/04.jpg" alt="" />
+                <h3 class="hijo">Chichenitza</h3>
+              </div>
+              <p>
+                Chichén Itzá, en México, es un enclave arqueológico que refleja
+                un pasado maya lleno de esplendor. Famoso por su Pirámide de
+                Kukulcán y ricos vestigios, este sitio evoca la grandeza
+                ancestral y cultural. Chichén Itzá es un destino imperdible que
+                fusiona historia clásica con la vitalidad de la exploración
+                contemporánea.
+              </p>
+            </a>
+          </article>
+        </div>
+      </section>
+      <h1 id="mejorValoradas"></h1>
+      <section class="cajitas-fondo-claro">
+        <div class="titulo">
+          <h2 class="p1">Mejor Valoradas</h2>
+        </div>
+        <div class="fila">
+          <!-- Caja 5 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/05.jpg" alt="" />
+                <h3 class="hijo">Praga</h3>
+              </div>
+              <p>
+                Praga, la joya de Europa Central, deslumbra con su rica historia
+                y ambiente encantador. Con su castillo imponente y el icónico
+                Puente de Carlos, la ciudad evoca épocas pasadas mientras se
+                abre a la modernidad. Praga es una maravilla que entrelaza
+                tradición clásica con el espíritu vivo de la actualidad.
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 6 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/06.jpg" alt="" />
+                <h3 class="hijo">Stonehenge</h3>
+              </div>
+              <p>
+                Stonehenge, en Inglaterra, es un enigma prehistórico que evoca
+                misterio y asombro. Con sus imponentes megalitos dispuestos en
+                círculo, este sitio ancestral cautiva la imaginación y desafía
+                la comprensión moderna. Stonehenge es una maravilla que
+                entrelaza pasado enigmático con la intriga de la actualidad.
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 7 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/07.jpg" alt="" />
+                <h3 class="hijo">Londres</h3>
+              </div>
+              <p>
+                Londres, la capital del Reino Unido, te invita a sumergirte en
+                un universo de contrastes y encanto. Esta metrópolis fascinante
+                es un crisol de historia y modernidad. Desde la majestuosidad
+                del Big Ben y la elegancia de Buckingham Palace, hasta la
+                energía de Camden Market y los rincones verdes de Hyde Park,
+                Londres es un mosaico de experiencias inolvidables que capturan
+                la esencia de una ciudad global vibrante.
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 8 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/08.jpg" alt="" />
+                <h3 class="hijo">San Francisco</h3>
+              </div>
+              <p>
+                San Francisco, en Estados Unidos, es un faro de diversidad y
+                creatividad que define la costa oeste. Con su icónico Puente
+                Golden Gate y la vibrante cultura en sus barrios, la ciudad
+                encarna una energía progresiva y ecléctica. San Francisco es una
+                maravilla que fusiona la innovación moderna con la riqueza de su
+                historia única.
+              </p>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- PARALLAX -->
+      <section id="parallax" class="parallax">
+        <h2>
+          Título con gran <span class="texto-verde">importancia</span> para mi
+          web
+        </h2>
+        <a href="">Acción a realizar</a>
+      </section>
+
+      <!-- Cajas Oscuras -->
+      <h1 id="destinos-turisticos"></h1>
+      <section class="cajitas-fondo-oscuro">
+        <div class="titulo">
+          <h2 class="p1">Destinos Turisticos</h2>
+        </div>
+        <div class="fila">
+          <!-- Caja 9 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/09.jpg" alt="" />
+                <h3 class="hijo">Título atracción nueve</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam, accusamus pariatur. Quia, autem repudiandae laborum
+                temporibus debitis placeat eligendi perspiciatis voluptatum
+                harum deserunt maiores, dolorem sit earum nam reiciendis
+                consectetur?
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 10 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/10.jpg" alt="" />
+                <h3 class="hijo">Título atracción diez</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam, accusamus pariatur. Quia, autem repudiandae laborum
+                temporibus debitis placeat eligendi perspiciatis voluptatum
+                harum deserunt maiores, dolorem sit earum nam reiciendis
+                consectetur?
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 11 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/11.jpg" alt="" />
+                <h3 class="hijo">Título atracción once</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam, accusamus pariatur. Quia, autem repudiandae laborum
+                temporibus debitis placeat eligendi perspiciatis voluptatum
+                harum deserunt maiores, dolorem sit earum nam reiciendis
+                consectetur?
+              </p>
+            </a>
+          </article>
+
+          <!-- Caja 12 -->
+          <article class="cajita">
+            <a href="">
+              <div class="padre">
+                <img src="img/12.jpg" alt="" />
+                <h3 class="hijo">Título atracción doce</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam, accusamus pariatur. Quia, autem repudiandae laborum
+                temporibus debitis placeat eligendi perspiciatis voluptatum
+                harum deserunt maiores, dolorem sit earum nam reiciendis
+                consectetur?
+              </p>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2021 - Óscar Rey</p>
+    </footer>
+  </body>
+</html>

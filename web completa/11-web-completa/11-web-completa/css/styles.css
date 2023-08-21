@@ -1,0 +1,246 @@
+/* ASPECTOS GENERALES */
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+  -webkit-touch-callout: none; /* Desactiva el menú emergente en dispositivos móviles */
+  -webkit-user-select: none; /* Desactiva la selección de texto en navegadores WebKit */
+  -moz-user-select: none; /* Desactiva la selección de texto en navegadores Gecko (Firefox) */
+  -ms-user-select: none; /* Desactiva la selección de texto en navegadores Microsoft */
+  user-select: none;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fascinate", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background-color: #72f9c7;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0px;
+  text-align: center;
+  padding: 25px;
+  font-size: 40px;
+}
+
+header {
+  background-color: #72f9c7;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: #333333;
+  color: #ffffff;
+  /* sombra */
+  -webkit-box-shadow: 0px 2px 2px 0px #898989;
+  box-shadow: 0px 2px 2px 0px #898989;
+  /* Menú stiky (pegajoso) */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.menu ul {
+  margin: 0px;
+  padding: 0px;
+  /* Solución espacio elementos */
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+.hero h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 0px;
+  padding: 70px;
+
+  margin-top: -300px;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.menu ul li a:hover {
+  color: #72f9c7;
+  background-color: #4e4e4e;
+}
+
+#link-activo {
+  background-color: #72f9c7;
+  color: #333333;
+}
+
+#link-activo:hover {
+  color: #4e4e4e;
+}
+.hero {
+  background-image: url("../img/bosque-otoño.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0px;
+  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -100px;
+}
+.textoAzul {
+  font-size: 2rem;
+  font-weight: bold;
+  color: greenyellow;
+}
+.fila {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: sepace-between;
+  flex-wrap: nowrap;
+  width: 100vw;
+  background-image: url("../Sources/Images/despegue.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+.cajita {
+  width: 23vw;
+  height: 400px;
+  margin: 10px;
+  border: #333333 solid 1px;
+  border-radius: 10px;
+  background-color: #ffffffbf;
+  box-shadow: 0px 2px 2px 0px #898989;
+  transition: all 0.5s ease-in-out;
+  padding: 10px;
+  font-size: 14px;
+}
+.cajita img {
+  width: 20vw;
+  height: 25vh;
+  object-fit: cover;
+  margin: 0 auto;
+  filter: grayscale(70%);
+  transition: all 0.5s ease-in-out;
+}
+.cajita:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  box-shadow: 0px 20px 20px 0px #000000;
+}
+.cajita:hover img {
+  filter: grayscale(0%);
+}
+.padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hijo {
+  width: 300px;
+  height: 20px;
+  text-align: center;
+}
+.containerFondoClaro {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+.titulo {
+  width: 100vw;
+  height: 100px;
+  background-image: url("../Sources/Images/pantallaTerminal\ .png");
+  background-size: cover;
+  background-position: center;
+  repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.parallax {
+  background-image: url("../Sources/Images/Fotografiar-via-lactea-SA-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#link-activo {
+  background-image: url("../Sources/Images/home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 50%;
+  color: #333333;
+  transition: all 0.5s ease-in-out;
+}
+#link-activo:hover {
+  background-color: #72f9c7;
+  color: #333333;
+  transform: scale(1.1);
+}

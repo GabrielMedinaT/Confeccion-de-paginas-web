@@ -1,0 +1,77 @@
+/*
+font-family: 'Fascinate', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
+/* ASPECTOS GENERALES */
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fascinate', cursive;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ESTILOS DE LA CABECERA */
+
+h1{
+    margin: 0px;
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+}
+
+header{
+    background-color: #72f9c7;
+}
+
+.menu{
+    background-color: #333333;
+    color: #ffffff;
+    /* sombra */
+    -webkit-box-shadow: 0px 2px 2px 0px #898989; 
+    box-shadow: 0px 2px 2px 0px #898989;
+}
+
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+    /* Solución espacio elementos */
+    display: flex;
+    justify-content: center;
+}
+ 
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.menu ul li a:hover{
+    color: #72f9c7;
+    background-color: #4e4e4e;
+}
+
+#link-activo{
+    background-color: #72f9c7;
+    color: #333333;
+}
+
+#link-activo:hover{
+    color: #4e4e4e;
+}
+
+
+
+

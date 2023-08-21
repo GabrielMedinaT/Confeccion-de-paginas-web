@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cafe o Te</h1>
+      <nav>
+        <ul>
+          <li>
+            <div><a href="">Tazas</a></div>
+          </li>
+          <li>
+            <div><a href="">Personalizacion</a></div>
+          </li>
+          <li>
+            <div><a href="">Sobre nosotros</a></div>
+          </li>
+          <li>
+            <div><a href="">Contacto</a></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="lateral">
+        <div class="cards">
+          <div class="card red">
+            <img
+              src="./sources/images/tazaPersonalizada.jpg"
+              alt=""
+              height="200px" />
+          </div>
+          <div class="card blue">
+            <img src="./sources/images/tazaDos.jpg" alt="" height="200px" />
+          </div>
+          <div class="card green">
+            <img src="./sources/images/tazaTres.jpg" alt="" height="200px" />
+          </div>
+        </div>
+      </div>
+      <div class="principal">
+        <article>
+          <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/personalizadas/personalizada1.jpg" />
+              </div>
+              <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/personalizadas/personalizada2.jpg" />
+              </div>
+              <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/personalizadas/personalizada3.webp" />
+              </div>
+              <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-4" />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/personalizadas/personalizada4.jpg" />
+              </div>
+              <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <li class="nav-dots">
+              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+              <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+            </li>
+          </ul>
+        </article>
+        <article></article>
+        <article></article>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
