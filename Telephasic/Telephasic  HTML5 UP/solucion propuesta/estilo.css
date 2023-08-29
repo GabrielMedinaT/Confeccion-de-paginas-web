@@ -1,0 +1,189 @@
+/* reseto  valores iniciales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Asignamos tipo de letra al documento por herencia*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*Header*/
+/*Navegador*/
+/*Fondo de la cabecera/ navegador*/
+header{
+    background: url("images/fondo.png") ;
+    padding-bottom: 2em;
+    color:white;
+}
+/*Separación del nav y del resto*/
+nav{
+    margin-bottom: 2em;
+}
+/*Prepara la lista desordenada como un grid de 5 columnas*/
+nav ul{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    justify-items: center;
+    width:70%;
+    margin:0 auto;
+    list-style-type: none;
+}
+/*Prepara los elementos de la lista del menú*/
+nav ul li{
+    line-height: 2.3em;
+    font-size: 1.1em;
+    color:white;
+    padding: .5em;
+}
+/*Prepara el elemento central del menu*/
+nav ul #central{
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: rgba(240,240 ,240,.3);
+    border-radius:0 0 .4em .4em;
+    border:1px solid white;
+    border-top: none;
+   
+}
+/*Fin del Navegador*/
+header h1, header h4, header p, article{
+    text-align: center;
+    margin-top:1.5em;
+}
+/*Botón-enlace del header*/
+header p{
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: .5em;
+    color:pink;
+    width: 20%;
+}
+/*Fin del Header*/
+/*inicio de main*/
+/*sectopm fila 1*/
+section#fila1{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: stretch;
+    margin-top: 2em;
+}
+
+img{
+    width: 80%;
+}
+
+#fila1 article div{
+    background: url("images/fondoimagen.png");
+}
+#fila1 article h2, #fila1 article h4{
+    margin:1em 3em;
+}
+#fila1 article p{
+    width: 30%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 0.3em;
+    border:1px solid blue;
+}
+/*section fila 2*/
+#fila2 div{
+    background: url("images/pic06.jpg");
+    height: 15em;
+    color:white;
+    padding: 4em;
+}
+#fila2 div p {
+    font-size: 2em;
+    border:1px solid white;
+    padding: 1.5em;
+    vertical-align: middle;
+}
+#fila2 div span {
+    background-color:  white;
+    padding: 1.2em;
+    vertical-align: middle;
+    color:forestgreen;
+    font-size: .6em;
+    border-radius: .5em;
+}
+#fila2 h2{
+    margin: 2em;
+}
+#fila2 article>p{
+    margin: 1.5em;
+    color:red;
+}
+/*section fila 3*/
+section#fila3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+}
+#fila3 article h2, #fila3 article h4{
+    margin:1em 3em;
+}
+#fila3 p{
+    width: 20%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 0.3em;
+    border:1px solid blue;
+    grid-column: span 3;
+    text-align: center;
+}
+/*fin de main/*
+/*inicio de footer*/
+footer{
+    background: url("images/fondopie.png");
+    margin: 2em;
+}
+footer , footer ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    gap:1em;
+
+}
+footer h2, footer h4, footer p{
+    grid-column: span 2;
+    text-align: center;
+    justify-content: stretch;
+    margin:2em;
+}
+footer h4 {
+    color:red;
+    margin:2em 8em;
+}
+form{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: stretch;
+    gap:1em;
+
+}
+#name,#email {
+    grid-column: span 3;
+    justify-content: stretch;
+}
+#texta{
+    grid-column: span 6;
+    justify-content: stretch;
+}
+#submit, #reset {
+    grid-column: span 2;
+    justify-content: stretch;
+    line-height: 2.2em;
+}
+form, footer ul{
+    list-style: none;
+}
+footer ul li{
+    border-bottom: dotted 1px #62676c;
+
+}
+footer p{
+    text-align: center;
+}

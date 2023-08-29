@@ -6,9 +6,14 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
+
   <body>
+    <div class="imagenDeFondo"></div>
     <header>
-      <h1>Cafe o Te</h1>
+      <h1>
+        <span class="tracking-in-expand">Cafe o</span>
+        <span class="te">Te</span>
+      </h1>
       <nav>
         <ul>
           <li>
@@ -45,6 +50,7 @@
       </div>
       <div class="principal">
         <article>
+          <h1>Tazas Personalizadas</h1>
           <ul class="slides">
             <input type="radio" name="radio-btn" id="img-1" checked />
             <li class="slide-container">
@@ -98,7 +104,61 @@
             </li>
           </ul>
         </article>
-        <article></article>
+        <article>
+          <h1>Nuestras Plantillas</h1>
+          <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1A" checked />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/plantillas/plantilla1.jpg" />
+              </div>
+              <div class="nav">
+                <label for="img-4A" class="prev">&#x2039;</label>
+                <label for="img-2A" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-2A" />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/plantillas/plantilla1.jpg" />
+              </div>
+              <div class="nav">
+                <label for="img-1A" class="prev">&#x2039;</label>
+                <label for="img-3A" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-3A" />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/plantillas/plantilla2.jpg" />
+              </div>
+              <div class="nav">
+                <label for="img-2A" class="prev">&#x2039;</label>
+                <label for="img-4A" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-4A" />
+            <li class="slide-container">
+              <div class="slide">
+                <img src="sources/images/personalizadas/personalizada4.jpg" />
+              </div>
+              <div class="nav">
+                <label for="img-3A" class="prev">&#x2039;</label>
+                <label for="img-1A" class="next">&#x203a;</label>
+              </div>
+            </li>
+
+            <li class="nav-dots">
+              <label for="img-1A" class="nav-dot" id="img-dot-1A"></label>
+              <label for="img-2A" class="nav-dot" id="img-dot-2A"></label>
+              <label for="img-3A" class="nav-dot" id="img-dot-3A"></label>
+              <label for="img-4A" class="nav-dot" id="img-dot-4A"></label>
+            </li>
+          </ul>
+        </article>
         <article></article>
       </div>
     </main>

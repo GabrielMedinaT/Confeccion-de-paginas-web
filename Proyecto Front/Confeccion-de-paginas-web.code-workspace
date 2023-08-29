@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../../Downloads/juizy-slideshow-v1.1.1-2023-08-21"
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.multiRootWorkspaceName": "juizy-slideshow-v1.1.1-2023-08-21"
+  }
+}
